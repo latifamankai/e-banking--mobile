@@ -31,7 +31,11 @@
                 "output": "./svg"
               }
             ],
-            "styles": ["src/theme/variables.scss", "src/global.scss"],
+            "styles": [
+              "src/theme/variables.scss",
+              "src/global.scss",
+              "src/assets/vendor/css-chart.css",
+              "src/assets/scss/style.scss"],
             "scripts": []
           },
           "configurations": {
