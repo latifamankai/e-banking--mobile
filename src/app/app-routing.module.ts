@@ -5,6 +5,7 @@ import {FullComponent} from './shared/layouts/full/full.component';
 import {AuthGuard} from './shared/guards/auth.guard';
 import {ChangePasswordComponent} from './change-password/change-password.component';
 import {ComptePage} from './compte/compte.page';
+import {CoursChangePage} from './cours-change/cours-change.page';
 
 const routes: Routes = [
   {
@@ -12,9 +13,15 @@ const routes: Routes = [
     component: FullComponent, children: [
       {path: 'change-password', component: ChangePasswordComponent},
       {path: 'compte', component: ComptePage},
+      {path: 'cours-change', component: CoursChangePage},
     ]
   },
   {path: 'login', component: LoginPage},
+  //{
+    //path: 'cours-change',
+   // loadChildren: () => import('./cours-change').then( m => m.CoursChangePageModule)
+ // },
+
 ];
 
 @NgModule({

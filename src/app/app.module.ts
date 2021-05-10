@@ -17,6 +17,7 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {ChangePasswordComponent} from './change-password/change-password.component';
 import {JwtInterceptorService} from './shared/services/jwt-interceptor.service';
 import {ComptePage} from './compte/compte.page';
+import {CoursChangePage} from './cours-change/cours-change.page';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
