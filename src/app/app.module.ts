@@ -18,6 +18,11 @@ import {ChangePasswordComponent} from './change-password/change-password.compone
 import {JwtInterceptorService} from './shared/services/jwt-interceptor.service';
 import {ComptePage} from './compte/compte.page';
 import {CoursChangePage} from './cours-change/cours-change.page';
+import {OperationPage} from './compte/operation/operation.page';
+import {ChequierPage} from './demande/chequier/chequier.page';
+import {LivretPage} from './demande/livret/livret.page';
+import {CartePage} from './demande/carte/carte.page';
+
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
@@ -35,7 +40,12 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     SidebarComponent,
     LoginPage,
     ChangePasswordComponent,
-    ComptePage],
+    ComptePage,
+    CoursChangePage,
+    OperationPage,
+    ChequierPage,
+    LivretPage,
+    CartePage],
   entryComponents: [],
   imports: [
     BrowserModule,

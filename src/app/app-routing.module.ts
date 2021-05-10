@@ -6,6 +6,10 @@ import {AuthGuard} from './shared/guards/auth.guard';
 import {ChangePasswordComponent} from './change-password/change-password.component';
 import {ComptePage} from './compte/compte.page';
 import {CoursChangePage} from './cours-change/cours-change.page';
+import {OperationPage} from './compte/operation/operation.page';
+import {ChequierPage} from './demande/chequier/chequier.page';
+import {CartePage} from './demande/carte/carte.page';
+import {LivretPage} from './demande/livret/livret.page';
 
 const routes: Routes = [
   {
@@ -14,13 +18,17 @@ const routes: Routes = [
       {path: 'change-password', component: ChangePasswordComponent},
       {path: 'compte', component: ComptePage},
       {path: 'cours-change', component: CoursChangePage},
+      {path: 'operation/:id', component: OperationPage},
+      {path: 'demande/chequier', component: ChequierPage},
+      {path: 'demande/carte', component: CartePage},
+      {path: 'demande/livret', component: LivretPage},
     ]
   },
   {path: 'login', component: LoginPage},
-  //{
-    //path: 'cours-change',
-   // loadChildren: () => import('./cours-change').then( m => m.CoursChangePageModule)
- // },
+
+
+
+
 
 ];
 

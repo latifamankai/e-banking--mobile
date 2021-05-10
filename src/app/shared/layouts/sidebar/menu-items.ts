@@ -16,7 +16,16 @@ export const ROUTES: RouteInfo[] = [
     roles: ['ROLE_CLIENT']
   },
   {
-    path: '/client/cours-change',
+    path: '/compte',
+    title: 'Mes comptes',
+    icon: 'icon-Wallet-2',
+    class: '',
+    extralink: false,
+    submenu: [],
+    roles: ['ROLE_CLIENT']
+  },
+  {
+    path: '/cours-change',
     title: 'Cours Change',
     icon: ' sl-icon-graph',
     class: '',
@@ -24,43 +33,40 @@ export const ROUTES: RouteInfo[] = [
     submenu: [],
     roles: ['ROLE_CLIENT']
   },
+
+
   {
     path: '',
     title: 'Demandes',
     icon: 'mdi mdi-dots-horizontal',
     class: 'nav-small-cap',
     extralink: true,
-    submenu: [],
-    roles: ['ROLE_CLIENT']
+    submenu: []
   },
   {
-    path: '/client/compte',
-    title: 'Compte',
-    icon: 'icon-Wallet-2',
+    path: '/demande/chequier',
+    title: 'Chéquiers',
+    icon: 'icon-Library-2',
     class: '',
     extralink: false,
     submenu: [],
-    roles: ['ROLE_CLIENT']
-  },
 
-
-  {
-    path: '/client/operation',
-    title: 'Operation',
-    icon: ' icon-Repeat-4',
-    class: '',
-    extralink: false,
-    submenu: [],
-    roles: ['ROLE_CLIENT']
   },
   {
-    path: '/client/demande',
-    title: 'Demande',
-    icon: ' icon-Repeat-4',
+    path: '/demande/livret',
+    title: 'Livrets',
+    icon: 'icon-Book',
     class: '',
     extralink: false,
-    submenu: [],
-    roles: ['ROLE_CLIENT']
+    submenu: []
+  },
+  {
+    path: '/demande/carte',
+    title: 'Cartes',
+    icon: 'sl-icon-credit-card',
+    class: '',
+    extralink: false,
+    submenu: []
   },
 ];
 

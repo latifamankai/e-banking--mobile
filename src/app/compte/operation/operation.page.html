@@ -1,0 +1,30 @@
+<div class="card">
+  <div class="card-header"> Opérations</div>
+  <div class="card-body">
+    <table class="table table-responsive-sm">
+      <thead>
+      <tr>
+        <th>Date Debut</th>
+        <th>Date Fin</th>
+        <th>Type Opération</th>
+        <th>Montant</th>
+        <th>Débiteur</th>
+        <th>Créditeur</th>
+        <th>Solde</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let op of operations">
+
+        <td>{{op?.balance?.dateDebut | date: 'dd/MM/yyyy'}}</td>
+        <td>{{op?.balance?.dateFin | date: 'dd/MM/yyyy'}}</td>
+        <td>{{op?.typeOperation?.libelle}}</td>
+        <td>{{op.montant}}</td>
+        <td>{{op.numCompteDebiteur}}</td>
+        <td>{{op.numCompteCrediteur}}</td>
+        <td>{{op.balance.solde}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

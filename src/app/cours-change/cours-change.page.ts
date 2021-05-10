@@ -9,9 +9,9 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./cours-change.page.scss'],
 })
 export class CoursChangePage implements OnInit {
-  coursChanges: CoursChange[];
-  constructor(private coursChangeService: CoursChangeService,
-              private activatedRoute: ActivatedRoute) {
+  coursChanges: any[];
+  currentDate = new Date();
+  constructor(private coursChangeService: CoursChangeService) {
   }
   ngOnInit(): void {
     this.getAllCoursChange();
@@ -19,8 +19,8 @@ export class CoursChangePage implements OnInit {
   }
 
   getAllCoursChange(): void {
-    const idDevise = this.activatedRoute.snapshot.paramMap.get('idDevise');
-    this.coursChangeService.getByDevise(idDevise).subscribe(data => {
+
+    this.coursChangeService.getAll().subscribe(data => {
       this.coursChanges = data;
       console.log(data);
     }, ex => {

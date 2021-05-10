@@ -1,28 +1,28 @@
-<div class="card" *ngFor="let cpt of comptes">
+
+
+<div class="card">
+  <div class="card-header"> Mes compte </div>
   <div class="card-body">
-    <div class="form-group">
-      <label >Numéro Compte: </label>
-      <label >{{cpt.numCompte}} </label>
-    </div>
+    <table class="table table-responsive-sm">
+      <thead>
+      <tr>
+        <th>Numéro compte</th>
+        <th>RIB</th>
+        <th>Type compte</th>
+        <th>Devise</th>
+        <th>Agence</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let cpt of comptes" routerLink="/operation/{{cpt.id}}">
 
-    <div class="form-group">
-      <label class="">RIB: </label>
-      <label >{{cpt.rib}} </label>
-    </div>
-
-    <div class="form-group">
-      <label class="">Type Compte: </label>
-      <label >{{cpt.typeCompte.libelle}} </label>
-    </div>
-
-    <div class="form-group">
-      <label class="">Devise: </label>
-      <label >{{cpt.devise.libelle}} </label>
-    </div>
-    <div class="form-group">
-      <label class="">Agence: </label>
-      <label >{{cpt.agence.libelle}} </label>
-    </div>
-
+        <td >{{cpt.numCompte}}</td>
+        <td>{{cpt.rib}}</td>
+        <td>{{cpt.typeCompte.libelle}}</td>
+        <td>{{cpt.devise.libelle}}</td>
+        <td>{{cpt.agence.libelle}}</td>
+      </tr>
+      </tbody>
+    </table>
   </div>
 </div>
