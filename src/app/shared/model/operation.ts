@@ -1,5 +1,5 @@
 import {Compte} from './compte';
-import {TypeOperation} from './type-operation';
+
 import {Balance} from './balance';
 
 export class Operation {
@@ -8,6 +8,6 @@ export class Operation {
   numCompteDebiteur: string;
   numCompteCrediteur: string;
   compte: Compte;
-  typeOperation: TypeOperation;
+  typeOperation: string;
   balance: Balance;
 }
