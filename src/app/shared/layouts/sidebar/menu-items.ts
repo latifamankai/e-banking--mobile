@@ -8,7 +8,7 @@ export const ROUTES: RouteInfo[] = [
 
   {
     path: '',
-    title: 'Parémetrages',
+    title: 'Information',
     icon: 'mdi mdi-dots-horizontal',
     class: 'nav-small-cap',
     extralink: true,

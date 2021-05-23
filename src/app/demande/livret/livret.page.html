@@ -1,9 +1,26 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>livret</ion-title>
-  </ion-toolbar>
-</ion-header>
+<div class="card">
+  <div class="card-header"> Demandes Livret </div>
+  <div class="card-body">
+    <table class="table table-responsive-sm">
+      <thead>
+      <tr>
+      <tr>
+        <th>Date</th>
+        <th>Numéro compte</th>
+        <th >Nombre</th>
+        <th>Etat</th>
+      </thead>
+      <tbody>
+      <tr *ngFor="let deml of demandes" >
+        <td>{{deml.date | date: 'dd/MM/yyyy HH:mm'}}</td>
+        <td>{{deml?.compte?.numCompte}}</td>
+        <td>{{deml.nbrLivret}}</td>
+        <td style="color: orange" *ngIf="deml?.statutDemande === 'EN_ATTENTE'">En attente</td>
+        <td style="color: green" *ngIf="deml?.statutDemande === 'ACCEPTEE'">Accepté</td>
+        <td  style="color: red " *ngIf="deml?.statutDemande === 'REJETEE'">Refusée</td>
 
-<ion-content>
-
-</ion-content>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

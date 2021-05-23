@@ -29,9 +29,9 @@ export class FullComponent implements OnInit {
     sidebarpos: 'fixed', // two possible values: fixed, absolute
     headerpos: 'fixed', // two possible values: fixed, absolute
     boxed: 'full', // two possible values: full, boxed
-    navbarbg: 'skin5', // six possible values: skin(1/2/3/4/5/6)
-    sidebarbg: 'skin5', // six possible values: skin(1/2/3/4/5/6)
-    logobg: 'skin5' // six possible values: skin(1/2/3/4/5/6)
+    navbarbg: 'skin6', // six possible values: skin(1/2/3/4/5/6)
+    sidebarbg: 'skin1', // six possible values: skin(1/2/3/4/5/6)
+    logobg: 'skin6' // six possible values: skin(1/2/3/4/5/6)
   };
 
   constructor(public router: Router,
